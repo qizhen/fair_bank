@@ -1,0 +1,7 @@
+核心计算函数代码没有公开
+interface FairBankCompute {
+    function getStageTargetAmount(uint256 _sId) external view returns(uint256);     //计算每个阶段筹款目标
+    function computeEarningsAmount(uint256 _sId, uint256 _amount, uint256 _currentTargetAmount, uint256 _expectEndSid, uint256 _ratio) external view returns(uint256);          //计算投资收益
+}
+
+1、getStageTargetAmount 阶段目标计算
